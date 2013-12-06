@@ -1,7 +1,9 @@
+package Code;
 import java.util.List;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -9,6 +11,11 @@ public class Anagram {
 	
 	public static String sortLetters(String s){
 		char[] str1 = s.toCharArray();
+		List<Character> st=new ArrayList<Character>();
+		for(char ch : str1){
+			st.add(ch);
+		}
+		Collections.sort(st);
 		int small,i,j;
 		char temp;
 		for(i=0;i< str1.length-1; i++){
@@ -22,7 +29,7 @@ public class Anagram {
 			str1[i]=temp;
 			
 		}
-		return(new String(str1));
+		return(st.toString());
 	}
 	
 	public static void main(String args[])throws IOException{

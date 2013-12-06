@@ -1,6 +1,8 @@
-import java.io.*;
+package Code;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.*;
-import java.util.ArrayList;
 public class MergeSort {
 	
 	static int maxsize=20;

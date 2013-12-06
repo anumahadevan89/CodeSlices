@@ -1,3 +1,4 @@
+package Code;
 import java.io.*;
 
 
@@ -7,7 +8,6 @@ public class BinarySearch {
 		int high=a.length,low=0,mid;
 		while(low<high){
 			mid=(low+high)/2;
-			System.out.println("In fn binarysearch"+mid);
 			mid=(low+high)/2;
 			if(a[mid]>item){
 				high=mid-1;

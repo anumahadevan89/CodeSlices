@@ -1,4 +1,9 @@
-import java.io.*;
+package Code;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class FindKthSmallestElement {
 	
 	public static int quicksort(int[] arr,int low,int high) {
@@ -51,7 +56,7 @@ public class FindKthSmallestElement {
 		}
 		int k;
 		
-		System.out.println("Enter element to search");
+		System.out.println("Enter kth position to find");
 		k=Integer.parseInt(br.readLine());
 		int ele=sort(inp,0,n-1,k-1);
 		System.out.println(ele);
